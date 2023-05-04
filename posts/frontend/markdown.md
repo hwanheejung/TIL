@@ -1,8 +1,6 @@
 # How to write by markdown?
 
-## 0. What is markdown
-
----
+## **0. What is markdown**
 
 2004년 John Gruber, Aaron Swartz에 의해 개발된 plain-text 포맷을 기본으로 한 경량형 마크업 언어이다.
 
@@ -12,11 +10,18 @@
 - html로 변환 가능
 - text 형태로 저장되기 때문에 용량 적음
 
-## 1. Manual
+<br/>
 
 ---
 
+## **1. Manual**
+
 VS code에서 지원하는 markdown preview를 이용하면 실시간으로 결과물을 볼 수 있음!
+
+### 1.0. Reference
+
+- [Github docs](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#quoting-text)
+- [Markdown Guide](https://www.markdownguide.org/basic-syntax/)
 
 ### 1.1. Headers
 
