@@ -27,12 +27,17 @@ VS code에서 지원하는 markdown preview를 이용하면 실시간으로 결�
 
 - 6가지 지원
 
-```
+```markdown
 # h1
+
 ## h2
+
 ### h3
+
 #### h4
+
 ##### h5
+
 ###### h6
 ```
 
@@ -52,10 +57,10 @@ VS code에서 지원하는 markdown preview를 이용하면 실시간으로 결�
 
 ### 1.2. Text Styling
 
-```
-*italic*
+```markdown
+_italic_
 **bold**
-***All italic  and bold***
+**_All italic and bold_**
 **this text is _extremely_ important**
 ~~Strikethrough~~
 ```
@@ -125,7 +130,7 @@ _italic_
 
 #### 1.4.1. Using single backticks
 
-```
+```markdown
 `command`
 `#0969DA`
 `rgb(9, 105, 218)`
@@ -144,7 +149,7 @@ _italic_
 
 #### 1.4.2. Using triple backticks
 
-````
+````markdown
 ```
 <h1>Hello World</h1>
 <p>It's a beautiful day!</p>
@@ -174,7 +179,7 @@ Click [here](https://github.com/hwanheejung/TIL)
 
 #### 1.5.2. Images
 
-```
+```markdown
 ![description](https://logos-world.net/wp-content/uploads/2020/11/GitHub-Emblem.png)
 
 ![description](../../images/frontend/GitHub-Emblem.png)
@@ -192,19 +197,19 @@ Click [here](https://github.com/hwanheejung/TIL)
 
 Use `-`, `*`, or `+`
 
-```
+```markdown
 - A
-    - A.a
-        - A.a.a
-        - A.a.b
-    - A.b
-    - A.c
+  - A.a
+    - A.a.a
+    - A.a.b
+  - A.b
+  - A.c
 - B
-    * B.a
-        + B.a.a
+  - B.a
+    - B.a.a
 - C
-    * a
-    * b
+  - a
+  - b
 ```
 
 - A
@@ -224,9 +229,9 @@ Use `-`, `*`, or `+`
 
 #### 1.6.2. Ordered lists
 
-```
+```markdown
 1. A
-    - a
+   - a
 2. B
 3. C
 ```
@@ -240,7 +245,7 @@ Use `-`, `*`, or `+`
 
 #### 1.6.3. Tasks
 
-```
+```markdown
 - [x] todo-1
 - [ ] todo-2
 ```

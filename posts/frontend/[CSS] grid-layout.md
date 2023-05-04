@@ -21,11 +21,11 @@ grid container에 `display: grid;`를 추가해준다.
 
 #### 3.1.1. px로 표현하기
 
-```
-.grid-container{
-    display: grid;
-    grid-template-columns: 100px 200px;
-    grid-template-rows: 50px 100px 50px;
+```css
+.grid-container {
+  display: grid;
+  grid-template-columns: 100px 200px;
+  grid-template-rows: 50px 100px 50px;
 }
 ```
 
@@ -35,10 +35,10 @@ grid container에 `display: grid;`를 추가해준다.
 
 #### 3.1.2. fraction으로 표현하기
 
-```
-.grid-container{
-    display: grid;
-    grid-template-columns: 1fr 2fr 3fr;
+```css
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 3fr;
 }
 ```
 
@@ -75,25 +75,25 @@ row의 개수가 몇개인지 정확하게 모를 때, 모든 아이템의 heigh
 
 item에 `grid-area`로 설정한 이름을 지정해줘야함.
 
-```
-.grid-container{
-    display: grid;
-    grid-template-columns: 100px 200px;
-    grid-auto-rows: minmax(50px, auto);
-    grid-gap: 10px;
-    grid-template-areas:
-        "header header"
-        "sidebar content"
-        "sidebar content";
+```css
+.grid-container {
+  display: grid;
+  grid-template-columns: 100px 200px;
+  grid-auto-rows: minmax(50px, auto);
+  grid-gap: 10px;
+  grid-template-areas:
+    "header header"
+    "sidebar content"
+    "sidebar content";
 }
-.item-1{
-    grid-area: header;
+.item-1 {
+  grid-area: header;
 }
-.item-2{
-    grid-area: sidebar;
+.item-2 {
+  grid-area: sidebar;
 }
-.item-3{
-    grid-area: content;
+.item-3 {
+  grid-area: content;
 }
 ```
 
@@ -110,7 +110,7 @@ item에 `grid-area`로 설정한 이름을 지정해줘야함.
 
 ### 3.3. rows and columns
 
-```
+```css
 grid-column-start: 1;
 grid-column-end: 5;
 ```
