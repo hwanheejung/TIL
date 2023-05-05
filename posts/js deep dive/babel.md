@@ -11,6 +11,8 @@ babel은 nodeJS가 이해하지 못하는 최신 자바스크립트를 컴파일
 
 ## **1. NodeJS에서 사용 가능한 babel 설치**
 
+- [babel](https://babeljs.io/) 설명서 따라함
+
 ### 1.1. installation
 
 ```

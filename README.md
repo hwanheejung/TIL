@@ -42,6 +42,6 @@ Today I Learned: 성장을 기록하는 공간
 
 - [What is Git](./posts/git%26github/%5Bgit%5D%20basic%20concept.md)
 
-### 3.3. Error 모음
+### 3.3. Github Error 모음
 
 - [remote: fatal error in commit_refs](./posts/git%26github/error_1.md)
