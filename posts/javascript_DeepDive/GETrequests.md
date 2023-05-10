@@ -1,5 +1,7 @@
 # GET Requests & Responses
 
+---
+
 ## 1. My first server
 
 ### # STEP 1
@@ -17,6 +19,8 @@ const app = express();
 ```
 
 > app이라는 express application 생성
+
+<br/>
 
 ### # STEP 2
 
@@ -43,6 +47,8 @@ const handleListening = () => console.log("Server listening on port 4000");
 
 <br/>
 
+---
+
 ## 2. GET Requests
 
 ### 2.1. Cannot GET / 해석
@@ -63,6 +69,8 @@ Cannot GET /
 we must respond.
 
 <br/>
+
+---
 
 ## 3. How to respond to GET requests?
 
@@ -85,6 +93,8 @@ app.get("/", handleHome);
 
 <br/>
 
+---
+
 ## 4. Responses
 
 remember => eventListener has handler, handler has event.
@@ -106,6 +116,8 @@ req와 res는 express로부터 받는 것.
 > res.send() : 화면에 Hi가 뜬다
 
 <br/>
+
+---
 
 ## 5. etc
 

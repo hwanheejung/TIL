@@ -32,6 +32,10 @@ $ npm init
 }
 ```
 
+<br/>
+
+---
+
 ## 2. js 파일을 실행하는 방법
 
 1. node를 이용하는 방법 : ex) `node index.js`
@@ -48,6 +52,10 @@ $ npm init
      ```
      // package.json이 존재하는 폴더 한정
 
+<br/>
+
+---
+
 ## 3. Installing Express
 
 ```
@@ -63,6 +71,8 @@ $ npm i express
 - express를 설치하면, npm이 알아서 dependencies에 express를 추가해줌
 
 <br/>
+
+---
 
 ## 4. Express 사용법
 
