@@ -14,8 +14,13 @@ Today I Learned: 성장을 기록하는 공간
 ### (2) CSS 응용
 
 - [Maintaining Aspect Ratio while resizing](./posts/frontend/aspectRatio.md)
+- [close dropdown menu when clicing outside](./posts/frontend/dropdownClose.md)
 - [slider]()
 - [pagination]()
+
+### (3) HTML
+
+- [HTML Tags: `<a>`](./posts/frontend/tag_a.md)
 
 ---
 
