@@ -14,7 +14,7 @@ Today I Learned: 성장을 기록하는 공간
 ### (2) CSS 응용
 
 - [Maintaining Aspect Ratio while resizing](./posts/frontend/aspectRatio.md)
-- [close dropdown menu when clicing outside](./posts/frontend/dropdownClose.md)
+- [close dropdown menu when clicking outside](./posts/frontend/dropdownClose.md)
 - [slider]()
 - [pagination]()
 
@@ -66,3 +66,4 @@ Today I Learned: 성장을 기록하는 공간
 ### (4) Github Error 모음
 
 - [remote: fatal error in commit_refs](./posts/git/error_1.md)
+- [gitignore 반영 안됨](./posts/git/error_2.md)
