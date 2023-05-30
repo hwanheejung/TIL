@@ -26,6 +26,8 @@ Today I Learned: 성장을 기록하는 공간
 
 ## 2. Javascript
 
+- [localStorage, sessionStorage](./posts/javascript_DeepDive/webStorage.md)
+
 ### (1) Set up
 
 - [What is Node.JS](./posts/javascript_DeepDive/node.js.md)
