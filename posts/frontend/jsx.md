@@ -84,7 +84,7 @@ ReactDOM.render(/*#__PURE__*/ _jsx(Container, {}), root);
 
 ## **2.문법**
 
-### 2.1 arrow function
+### 2.1) arrow function
 
 `const myFunction = () => ();`
 
@@ -94,7 +94,7 @@ ReactDOM.render(/*#__PURE__*/ _jsx(Container, {}), root);
 
 <br>
 
-### 2.2 우리가 만든 컴포넌트의 첫 글자는 반드시 대문자
+### 2.2) 우리가 만든 컴포넌트의 첫 글자는 반드시 대문자
 
 `<Button />` `<Title />`
 
@@ -102,4 +102,4 @@ ReactDOM.render(/*#__PURE__*/ _jsx(Container, {}), root);
 
 <br>
 
-### 2.3 함수형으로 바꾸면 컴포넌트로 인식함
+### 2.3) 함수형으로 바꾸면 컴포넌트로 인식함

@@ -29,6 +29,8 @@ Today I Learned: 성장을 기록하는 공간
 
 - [React의 필요성(Todolist 회고)](./posts/frontend/why_react.md)
 - [JSX](./posts/frontend/jsx.md)
+- [JSX 문법](./posts/frontend/jsx_grammar.md)
+- [State](./posts/frontend/state.md)
 
 <br>
 
