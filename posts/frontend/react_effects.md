@@ -63,6 +63,16 @@ useEffect(() => {
 
 ## **3. Cleanup**
 
+- component가 파괴될 때도 코드를 실행시킬 수 있음
+- 주로 사용되진 않지만 알아두면 좋음
+
+```javascript
+useEffect(() => {
+  console.log("created");
+  return () => console.log("destroyed");
+}, []);
+```
+
 <br>
 
 ---
@@ -72,9 +82,8 @@ useEffect(() => {
 - react는 최소 단위 rendering을 위해 사용된다.
 - useState(): 변수, 변수를 제어하는 함수(modifier)로 구성되며, 변하는 값을 제어, 해당 부분의 리렌더링을 위함
 - props: 태그의 속성 값을 함수의 argument처럼 component에 값을 전달
-  - propType를 설치하고 props의 타입을 지정해줄 수 있음.
-    - `Button.propTypes = {
-  text: PropTypes.string.isRequired,}`
+  - propType를 설치하고 props의 타입을 지정해줄 수 있음. - `Button.propTypes = {
+text: propTypes.string.isRequired,}`
 - useEffect(): 코드의 실행 시점을 관리할 수 있는 선택권을 얻는 방어막 같은 존재. dependency가 없을 경우 최초 1회 실행, 있을 경우 해당 값이 변할 경우 실행. (dependency는 여러개 입력 가능)
 
 - 부모 컴포넌트에서 리렌더링이 일어날 경우 모든 자식들이 리렌더링됨. (we can use memo)
