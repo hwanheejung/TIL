@@ -27,11 +27,13 @@ Today I Learned: 성장을 기록하는 공간
 
 ### (4) React
 
+- [Create react app](./posts/frontend/react_setup.md)
 - [React의 필요성(Todolist 회고)](./posts/frontend/why_react.md)
 - [JSX](./posts/frontend/jsx.md)
 - [JSX 문법](./posts/frontend/jsx_grammar.md)
 - [useState](./posts/frontend/state.md)
 - [useEffect](./posts/frontend/react_effects.md)
+- [Router](./posts/frontend/react_router.md)
 
 <br>
 
