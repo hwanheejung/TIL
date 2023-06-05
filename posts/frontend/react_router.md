@@ -66,3 +66,16 @@ function Movie() {
 ---
 
 ## **4. 동적 URL**
+
+- useParams
+  - url에 있는 값을 반환
+  - Detail.js에서 `:변수명` 변수에 url뒤에 붙은 값을 담아 넘겨준다.
+
+```javascript
+// App.js
+<Route path="/movie/:id" element={<Detail />}></Route>;
+
+// Detail.js
+import { useParams } from "react-router-dom";
+const { id } = useParams();
+```
