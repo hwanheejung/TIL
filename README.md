@@ -12,6 +12,7 @@ Today I Learned: 성장을 기록하는 공간
 - [HTML Tags: `<form>`]()
 - [Grid-layout](./posts/frontend/css_grids.md)
 - [웹사이트 최적화: Lazy Loading](./posts/frontend/LazyLoading.md)
+- [SCSS]()
 
 ### (2) 응용
 
@@ -34,6 +35,13 @@ Today I Learned: 성장을 기록하는 공간
 - [useState](./posts/frontend/state.md)
 - [useEffect](./posts/frontend/react_effects.md)
 - [Router](./posts/frontend/react_router.md)
+- [Recoil]()
+- [Styled Component](./posts/frontend/react_styledComponents.md)
+
+  ### 4.1) 'How to' Series
+
+  - [How to open link in new tab]()
+  - [How to kill server](./posts/frontend/react_killServer.md)
 
 <br>
 
