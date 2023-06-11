@@ -9,17 +9,17 @@ Today I Learned: 성장을 기록하는 공간
 ### (1) HTML, CSS
 
 - [HTML Tags: `<a>`](./posts/frontend/tag_a.md)
-- [HTML Tags: `<form>`]()
+<!-- - [HTML Tags: `<form>`]() -->
 - [Grid-layout](./posts/frontend/css_grids.md)
 - [웹사이트 최적화: Lazy Loading](./posts/frontend/LazyLoading.md)
-- [SCSS]()
+<!-- - [SCSS]() -->
 
 ### (2) 응용
 
 - [Maintaining Aspect Ratio while resizing](./posts/frontend/aspectRatio.md)
 - [close dropdown menu when clicking outside](./posts/frontend/dropdownClose.md)
-- [slider]()
-- [pagination]()
+  <!-- - [slider]() -->
+  <!-- - [pagination]() -->
 
 ### (3) Javascript
 
@@ -35,13 +35,18 @@ Today I Learned: 성장을 기록하는 공간
 - [useState](./posts/frontend/state.md)
 - [useEffect](./posts/frontend/react_effects.md)
 - [Router](./posts/frontend/react_router.md)
-- [Recoil]()
+<!-- - [Recoil]() -->
 - [Styled Component](./posts/frontend/react_styledComponents.md)
 
   ### 4.1) 'How to' Series
 
-  - [How to open link in new tab]()
+  <!-- - [How to open link in new tab]() -->
+
   - [How to kill server](./posts/frontend/react_killServer.md)
+
+### (5) Typescript
+
+<!-- - [Install]() -->
 
 <br>
 
@@ -60,7 +65,7 @@ Today I Learned: 성장을 기록하는 공간
 ### (2) Introduction to Express
 
 - [Starting server: GET Requests and Responses](./posts/youtubeClone/GETrequests.md)
-- [Middleware]()
+<!-- - [Middleware]() -->
 
 <br>
 
