@@ -48,6 +48,9 @@ Today I Learned: 성장을 기록하는 공간
 
 <!-- - [Install]() -->
 
+- [Why Typescript](./posts/frontend/ts_why.md)
+- [Types](./posts/frontend/ts_types.md)
+
 <br>
 
 ---
