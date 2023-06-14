@@ -123,6 +123,10 @@ let c : any[] = 1, 2, 3, 4;
 b + c  // 정상작동
 ```
 
+<br />
+
+---
+
 ## **3. Types of TS : only in TS**
 
 - typescript의 핵심은 type checker와 소통하는 것
@@ -143,3 +147,37 @@ if (typeof a === "string") {
 ```
 
 ### 3.2. void
+
+- 아무것도 return 하지 않는 function이 대상
+
+```javascript
+function hello() {
+  // hello() : void
+  console.log("x");
+}
+```
+
+### 3.3. never
+
+- 함수가 절대 return하지 않을 때
+- 예를 들어 함수에서 예외가 발생할 때
+
+```javascript
+function hello(): never {
+  throw new Error("xxx"); // return하지 않고 오류를 발생시키는 함수
+}
+```
+
+- 타입이 두가지일 때
+
+```javascript
+function hello(name: string | number) {
+  if (typeof name === "string") {
+    // name : string
+  } else if (typeof name === "number") {
+    // name : number
+  } else {
+    // name : never
+  }
+}
+```

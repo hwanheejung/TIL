@@ -19,3 +19,23 @@
 ## **2. Fix errors**
 
 - typescript로 만들어지지 않은 library를 import하는 경우
+
+### ex) styled componenets
+
+- styled-components는 Typescript가 이해하지 못하기 때문에 설치해줘야함.
+
+```
+npm i styled-components
+```
+
+에러날 경우
+
+```
+npm i styled-components@latest
+```
+
+- 타입정의 받기
+
+```
+npm i --save-dev @types/styled-components
+```

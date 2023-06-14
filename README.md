@@ -46,8 +46,7 @@ Today I Learned: 성장을 기록하는 공간
 
 ### (5) Typescript
 
-<!-- - [Install]() -->
-
+- [Install](./posts/frontend/ts_install.md)
 - [Why Typescript](./posts/frontend/ts_why.md)
 - [Types](./posts/frontend/ts_types.md)
 
@@ -87,6 +86,7 @@ Today I Learned: 성장을 기록하는 공간
 ### (3) Github
 
 - [What is Github](./posts/git/github_basicConcept.md)
+- [Create Repository](./posts/git/github_rp.md)
 - [branch](./posts/git/github_branch.md)
 - [PR](./posts/git/github_PR.md)
 
