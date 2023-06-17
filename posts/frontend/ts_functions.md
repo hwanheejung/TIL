@@ -57,7 +57,9 @@ const add: Add = (a, b) => {
 }
 ```
 
-## 2.1. Next.js에서 볼 수 있는 overloading의 좋은 예시
+<br />
+
+### 2.1. Next.js에서 볼 수 있는 overloading의 좋은 예시
 
 ```javascript
 Router.push("/home"); // 이렇게도 할 수 있지만,
@@ -89,7 +91,7 @@ const push:Push = (config) => {
 
 <br/>
 
-## 2.2. 다른 여러 개의 argument를 가지고 있을 때 발생하는 효과
+### 2.2. 다른 여러 개의 argument를 가지고 있을 때 발생하는 효과
 
 ```javascript
 type Add = {
@@ -188,7 +190,9 @@ superPrint([1, 2, 3, 4], "x");
 - 그 외 대부분의 경우는 직접 작성할 일은 드물다.
 - nextJS, nestJS, reactJS에서 ts에게 generic을 보내게 될 것.
 
-- 다른 방식으로 선언하는 방법
+<br />
+
+### 4.1. 다른 방식으로 선언하는 방법
 
 ```javascript
 function superPrint<V>(a: V[]) {
@@ -198,7 +202,9 @@ function superPrint<V>(a: V[]) {
 const a = superPrint([1, 2, 3, 4]);
 ```
 
-- 제네릭을 사용해 타입 확장. reuse
+<br />
+
+### 4.2. 제네릭을 사용해 타입 확장. reuse
 
 ```javascript
 type Player<T> = {
@@ -221,14 +227,18 @@ const Harry: Player<null> = {
 };
 ```
 
-- number[]를 다르게 쓰는 방법
+<br />
+
+### 4.3. number[]를 다르게 쓰는 방법
 
 ```javascript
 function printAllNumbers(arr: number[]);
 function printAllNumbers(arr: Array<number>);
 ```
 
-- reactJS에서의 제네릭
+<br />
+
+### 4.4. reactJS에서의 제네릭
 
 ```javascript
 useState<number>()
