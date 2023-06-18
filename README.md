@@ -25,6 +25,7 @@ Today I Learned: 성장을 기록하는 공간
 
 - [localStorage, sessionStorage](./posts/frontend/webStorage.md)
 - [Array Methods](./posts/frontend/arrayMethods.md)
+- [[Deep Dive] (1) 변수는 메모리 주소를 기억한다](./posts/frontend/js_variable.md)
 
 ### (4) React
 
@@ -50,6 +51,7 @@ Today I Learned: 성장을 기록하는 공간
 - [Why Typescript](./posts/frontend/ts_why.md)
 - [Types](./posts/frontend/ts_types.md)
 - [Functions](./posts/frontend/ts_functions.md)
+- [Classes and Interfaces](./posts/frontend/ts_class.md)
 
 <br>
 
