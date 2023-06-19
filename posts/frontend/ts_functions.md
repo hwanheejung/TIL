@@ -6,7 +6,7 @@
 - 함수가 어떻게 구현되는지를 알려주는게 아니라, parameter(매개변수)의 타입과 함수의 반환 타입을 알려줌
 - 우리가 타입을 만들 수 있고, 함수가 어떻게 작동하는 지 서술해 둘 수 있다는 장점
 - 프로그램을 디자인할 때 먼저 타입을 생각하고, 코드를 구현하는 것
-- ![참고링크](https://www.typescriptlang.org/docs/handbook/2/functions.html#call-signatures)
+- [참고링크](https://www.typescriptlang.org/docs/handbook/2/functions.html#call-signatures)
 
 <br />
 
