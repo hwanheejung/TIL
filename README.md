@@ -26,6 +26,7 @@ Today I Learned: 성장을 기록하는 공간
 - [localStorage, sessionStorage](./posts/frontend/webStorage.md)
 - [Array Methods](./posts/frontend/arrayMethods.md)
 - [[Deep Dive] (1) 변수는 메모리 주소를 기억한다](./posts/frontend/js_variable.md)
+- [[Deep Dive] (2) 표현식과 문]()
 
 ### (4) React
 
