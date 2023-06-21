@@ -108,3 +108,210 @@ Zoey.getFullName();
 |  private  |        O         |       X       |    X     |
 | protected |        O         |       O       |    X     |
 |  private  |        O         |       O       |    O     |
+
+<br />
+
+---
+
+## **2. Interfaces**
+
+- typescript가 object 모양을 설명하는 방법: type, **interface**
+- type이 interface보다 활용할 수 있는 게 더 많음(object 모양 결정, 특정 값만 가지도록 제한, alias 생성 가능 etc)
+- interface는 object의 모양을 결정하는 목적만 있음
+
+```typescript
+type Team = "red" | "blue" | "yellow";
+type Health = 1 | 5 | 10;
+
+interface Player {
+  nickname: string;
+  team: Team;
+  health: Health;
+}
+
+const zoey: Player = {
+  nickname: "Zoey",
+  team: "blue",
+  health: 10,
+};
+```
+
+### 2.1. 상속 가능(class와 비슷하다)
+
+```typescript
+interface User {
+  name: string;
+}
+interface Player extends User {}
+const zoey: Player = {
+  name: "zoey",
+};
+```
+
+- type으로 하면,
+
+```typescript
+type User = {
+  name: string;
+};
+// type Player은 User, 그리고 {}이다.
+type Player = User & {};
+const zoey: Player = {
+  name: "zoey",
+};
+```
+
+interface가 더 보기 좋음! feel more like OOP
+
+<br />
+ 
+---
+
+### 2.2. property 축적 가능
+
+```typescript
+interface User {
+  name: string;
+}
+interface User {
+  age: number;
+}
+interface User {
+  health: number;
+}
+const zoey: User = {
+  name: "zoey",
+  age: 22,
+  health: 10,
+};
+```
+
+---
+
+### 2.3. Interface의 abstract class에서의 활용 (추상클래스를 interface로 바꾸자!)
+
+우선, 아래의 코드가 JS에서는 어떻게 보이는지 확인해보자.
+
+```typescript
+abstract class User {
+  constructor(protected firstName: string, protected lastName: string) {}
+  abstract sayHi(name: string): string;
+  abstract fullName(): string;
+}
+// 보다시피 추상클래스는 blueprint(설계도)의 역할만 한다.
+
+class Player extends User {
+  fullName() {
+    return `${this.firstName} ${this.lastName}`;
+  }
+  sayHi(name: string) {
+    return `hello ${name}. Ny name is ${this.firstName}`;
+  }
+}
+```
+
+```javascript
+"use strict";
+class User {
+  constructor(firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+}
+
+class Player extends User {
+  fullName() {
+    return `${this.firstName} ${this.lastName}`;
+  }
+  sayHi(name) {
+    return `hello ${name}. Ny name is ${this.firstName}`;
+  }
+}
+```
+
+class User는 아무런 쓰임도 없는, 단지 blueprint일 뿐이다. 거슬린다.. 여기서 잠깐. Interface는 가벼워서 컴파일하면 JS로 바뀌지 않고 사라지는 특징을 기억하는가? 그렇다면 class User을 interface 형태로 바꿀 수 있지 않을까?
+
+interface를 쓸 때 클래스가 특정 형태를 따르도록 어떻게 강제할 수 있을까?
+
+```typescript
+interface User {
+  firstName: string;
+  lastName: string;
+  sayHi(name: string): string;
+  fullName(): string;
+}
+// extends 대신 implements
+class Player implements User {}
+```
+
+여기까지 쓰면, Player가 missing property(firstName, lastName, sayHi, fullName)가 있다고 빨간줄이 뜬다.
+
+Class 'Player' incorrectly implements interface 'User'.
+Type 'Player' is missing the following properties from type 'User': firstName, lastName, sayHI, fullName
+
+누락된 properties를 넣어보자
+
+```typescript
+interface User {
+  firstName: string;
+  lastName: string;
+  sayHi(name: string): string;
+  fullName(): string;
+}
+// extends 대신 implements
+class Player implements User {
+  constructor(private firstName: string, private lastName: string) {}
+  fullName() {
+    return `${this.firstName} ${this.lastName}`;
+  }
+  sayHi(name: string) {
+    return `hello ${name}. Ny name is ${this.firstName}`;
+  }
+}
+```
+
+여전히 에러가 난다.
+
+Property 'firstName' is private in type 'Player' but not in type 'User'.
+
+인터페이스를 상속할 때는 property를 private이나 protected으로 만들지 못한다. 오직 private만 가능하다.
+
+```typescript
+interface User {
+  firstName: string;
+  lastName: string;
+  sayHi(name: string): string;
+  fullName(): string;
+}
+// extends 대신 implements
+class Player implements User {
+  constructor(public firstName: string, public lastName: string) {}
+  fullName() {
+    return `${this.firstName} ${this.lastName}`;
+  }
+  sayHi(name: string) {
+    return `hello ${name}. Ny name is ${this.firstName}`;
+  }
+}
+```
+
+이제, JS에서는
+
+```javascript
+class Player {
+  constructor(firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+  fullName() {
+    return `${this.firstName} ${this.lastName}`;
+  }
+  sayHi(name) {
+    return `hello ${name}. Ny name is ${this.firstName}`;
+  }
+}
+```
+
+더이상 추상클래스를 추가로 사용하지 않는다. 파일 사이즈를 줄였다.
+
+정리하자면, js로 컴파일되지 않는 Interface의 특징을 이용해, js에서 쓰임이 없는 추상클래스를 interface로 대체했다. 단점은 private과 public property를 사용하지 못한다는 점, Interface에서는 contructor(){}를 사용할 수 없다는 점.

@@ -64,6 +64,24 @@ const friend: Player = {
 };
 ```
 
+```javascript
+// 특정 값을 가지도록 제한할 수도 있음
+type Team = "red" | "blue" | "yellow";
+type Health = 1 | 5 | 10;
+
+type Player = {
+  nickname: string,
+  team: Team,
+  health: Health,
+};
+
+const zoey: Player = {
+  nickname: "Zoey",
+  team: "blue",
+  health: 10,
+};
+```
+
 ### 2.2. function에서 return값의 type 지정 방법
 
 ```javascript
