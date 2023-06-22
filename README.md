@@ -13,6 +13,7 @@ Today I Learned: 성장을 기록하는 공간
 - [Grid-layout](./posts/frontend/css_grids.md)
 - [웹사이트 최적화: Lazy Loading](./posts/frontend/LazyLoading.md)
 <!-- - [SCSS]() -->
+- [Reset.css](./posts/frontend/css_reset.md)
 
 ### (2) 응용
 
@@ -25,6 +26,7 @@ Today I Learned: 성장을 기록하는 공간
 
 - [localStorage, sessionStorage](./posts/frontend/webStorage.md)
 - [Array Methods](./posts/frontend/arrayMethods.md)
+- [Destructuring Assignment](./posts/frontend/js_destructuring.md)
 - [[Deep Dive] (1) 변수는 메모리 주소를 기억한다](./posts/frontend/js_variable.md)
 - [[Deep Dive] (2) 표현식과 문]()
 
@@ -39,12 +41,18 @@ Today I Learned: 성장을 기록하는 공간
 - [Router](./posts/frontend/react_router.md)
 <!-- - [Recoil]() -->
 - [Styled Component](./posts/frontend/react_styledComponents.md)
+- [Apply Reset.css](./posts/frontend/react_reset.md)
 
   ### 4.1) 'How to' Series
 
   <!-- - [How to open link in new tab]() -->
 
   - [How to kill server](./posts/frontend/react_killServer.md)
+
+  ### 4.2) React with TypeScript
+
+  - [Forms]()
+  - [Themes](./posts/frontend/react_themes.md)
 
 ### (5) Typescript
 
@@ -53,6 +61,7 @@ Today I Learned: 성장을 기록하는 공간
 - [Types](./posts/frontend/ts_types.md)
 - [Functions](./posts/frontend/ts_functions.md)
 - [Classes and Interfaces](./posts/frontend/ts_class.md)
+- [Polymorphism](./posts/frontend/ts_polymorphism.md)
 
 <br>
 
