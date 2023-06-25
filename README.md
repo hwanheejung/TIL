@@ -38,11 +38,12 @@ Today I Learned: 성장을 기록하는 공간
 - [JSX 문법](./posts/frontend/jsx_grammar.md)
 - [useState](./posts/frontend/state.md)
 - [useEffect](./posts/frontend/react_effects.md)
-- [Router](./posts/frontend/react_router.md)
+- [Router-useParams](./posts/frontend/react_router.md)
 <!-- - [Recoil]() -->
 - [Styled Component](./posts/frontend/react_styledComponents.md)
 - [Apply Reset.css](./posts/frontend/react_reset.md)
-- [Route useLocation](./posts/frontend/react_routeStates.md)
+- [Router-useLocation](./posts/frontend/react_routeStates.md)
+- [Nested Routes](./posts/frontend/react_nested.md)
 
   ### 4.1) 'How to' Series
 
