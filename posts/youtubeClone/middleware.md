@@ -74,3 +74,29 @@ app.use()는 global middleware를 만들 수 있게 해준다. 즉, 어떤 URL�
 app.use(gossipMiddleware);
 app.get("/", handleHome);
 ```
+
+<br/>
+
+# **4. External Middlewares: Morgan**
+
+- node.js 서버로 구성된 웹 환경에서 HTTP request 로그를 관리하기 위한 middleware
+- install: `sudo npm i morgan`
+- morgan 함수를 호출하면, 내가 설정한 대로 middleware를 return해준다.
+
+## 4.1. How to use?
+
+```javascript
+// 이름은 상관없음.
+import morgan from "morgan";
+const logger = morgan("dev");
+app.use(logger);
+```
+
+morgan("dev")를 호울하면, req, res, next를 포함한 함수를 return해준다.
+
+<br/>
+
+## 4.2. 기존 middleware와 Morgan의 차이점
+
+- Morgan이 더 정교하다.
+- Morgan은 GET, path, status code.. 와 같은 모든 정보를 가지고 있다.
