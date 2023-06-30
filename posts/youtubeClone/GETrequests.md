@@ -1,10 +1,8 @@
 # GET Requests & Responses
 
----
+# **1. My first server**
 
-## 1. My first server
-
-### # STEP 1
+## # STEP 1
 
 ```javascript
 import express from "express";
@@ -22,7 +20,7 @@ const app = express();
 
 <br/>
 
-### # STEP 2
+## # STEP 2
 
 - server란?
   - server는 항상 켜져있는 인터넷에 연결된 컴퓨터같은 것.
@@ -47,11 +45,9 @@ const handleListening = () => console.log("Server listening on port 4000");
 
 <br/>
 
----
+# **2. GET Requests**
 
-## 2. GET Requests
-
-### 2.1. Cannot GET / 해석
+## 2.1. Cannot GET / 해석
 
 ```
 Cannot GET /
@@ -64,15 +60,13 @@ Cannot GET /
 > - HTTP : 우리가 서버와 소통하는, 혹은 서버끼리 소통하는 가장 안정적이고, 오래된 방법. user가 접속하려고 할 때 browser가 http request(웹사이트에 접속하고 서버에 정보를 보내는 방법)를 만들어줌.
 > - 웹사이트에 접속하려 할 때, 사용자가 직접 접속하는 게 아니라, 웹사이트에게 "get me your homepage" 라고 하는 것. 웹사이트가 사용자에게 오게 하는 것.
 
-### 2.2 누군가가 GET request를 한다면?
+## 2.2 누군가가 GET request를 한다면?
 
 we must respond.
 
 <br/>
 
----
-
-## 3. How to respond to GET requests?
+# **3. How to respond to GET requests?**
 
 express application이 만들어진 다음부터 코드를 짜야함.
 
@@ -93,9 +87,7 @@ app.get("/", handleHome);
 
 <br/>
 
----
-
-## 4. Responses
+# **4. Responses**
 
 remember => eventListener has handler, handler has event.
 
@@ -112,14 +104,12 @@ req와 res는 express로부터 받는 것.
 
 > root page로 get request가 오면, express는 handleHome에 req, res object를 넣어준다.
 
-> res.end() : server가 request를 종료함. no response
+> res.end() : server가 request를 종료함. no response  
 > res.send() : 화면에 Hi가 뜬다
 
 <br/>
 
----
-
-## 5. etc
+# **5. etc**
 
 [Expressjs.com](https://expressjs.com/ko/4x/api.html#express.json%20[%20express%20document%20])
 

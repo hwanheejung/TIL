@@ -80,7 +80,7 @@ Today I Learned: 성장을 기록하는 공간
 ## (2) Introduction to Express
 
 - [Starting server: GET Requests and Responses](./posts/youtubeClone/GETrequests.md)
-<!-- - [Middleware]() -->
+- [Middleware](./posts/youtubeClone/middleware.md)
 
 <br>
 
@@ -105,12 +105,16 @@ Today I Learned: 성장을 기록하는 공간
 
 <br />
 
-# **5. Data Base**
+# **4. Data Base**
 
 - [DB를 왜 배워야 하는가?](./posts/database/why.md)
 - [정규화(Normalization)]()
 
 <br />
+
+# **5. Network**
+
+<br/>
 
 # **4. Creative Coding**
 

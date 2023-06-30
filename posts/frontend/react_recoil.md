@@ -12,6 +12,8 @@ Header -> (isDark) <- Chart
 
 recoil에서는 이 버블을 atom이라 부른다.
 
+<br/>
+
 # **2. How to Use**
 
 ## 2.1. Connect the atom
