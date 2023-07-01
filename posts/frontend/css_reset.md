@@ -147,7 +147,19 @@ table {
   padding: 0;
   box-sizing: border-box;
 }
+button {
+  background: inherit;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  cursor: pointer;
+}
 a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+a:visited {
   text-decoration: none;
   color: inherit;
 }
@@ -156,6 +168,21 @@ ul,
 li {
   list-style: none;
 }
+input {
+  -webkit-appearance: none; /* Safari and Chrome */
+  -moz-appearance: none; /* Firefox */
+  appearance: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input:focus {
+  outline: none;
 ```
 
 ## 3.1. HTML link 태그에 바로 적용
