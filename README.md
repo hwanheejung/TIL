@@ -131,3 +131,7 @@ Today I Learned: 성장을 기록하는 공간
 # **5. Memo**
 
 - [shortcuts](./posts/memo/shortcuts.md)
+
+# **6. 교양**
+
+- [Web/Internet](./posts/etc/internet.md)
