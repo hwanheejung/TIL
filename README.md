@@ -4,7 +4,7 @@ Today I Learned: 성장을 기록하는 공간
 
 <br />
 
-# **1. Frontend**
+# **HTML, CSS**
 
 ## (1) HTML, CSS
 
@@ -22,7 +22,7 @@ Today I Learned: 성장을 기록하는 공간
   <!-- - [slider]() -->
   <!-- - [pagination]() -->
 
-## (3) Javascript
+# **Javascript**
 
 - [localStorage, sessionStorage](./posts/frontend/webStorage.md)
 - [Array Methods](./posts/frontend/arrayMethods.md)
@@ -30,7 +30,7 @@ Today I Learned: 성장을 기록하는 공간
 - [[Deep Dive] (1) 변수는 메모리 주소를 기억한다](./posts/frontend/js_variable.md)
 - [[Deep Dive] (2) 표현식과 문]()
 
-## (4) React
+# **React**
 
 - [Create react app](./posts/frontend/react_setup.md)
 - [React의 필요성(Todolist 회고)](./posts/frontend/why_react.md)
@@ -47,17 +47,17 @@ Today I Learned: 성장을 기록하는 공간
 - [Visualizing Data w/ APEXCHARTS](./posts/frontend/react_apexcharts.md)
 - [State Management w/ Recoil](./posts/frontend/react_recoil.md)
 
-  ### 4.1) 'How to' Series
+  ## (1) 'How to' Series
 
   <!-- - [How to open link in new tab]() -->
 
   - [How to kill server](./posts/frontend/react_killServer.md)
 
-  ### 4.2) React with TypeScript
+  ## (2) React with TypeScript
 
   - [Themes](./posts/frontend/react_themes.md)
 
-## (5) Typescript
+# **Typescript**
 
 - [Install](./posts/frontend/ts_install.md)
 - [Why Typescript](./posts/frontend/ts_why.md)
@@ -66,6 +66,8 @@ Today I Learned: 성장을 기록하는 공간
 - [Classes and Interfaces](./posts/frontend/ts_class.md)
 
 <br>
+
+# **Django**
 
 # **2. Youtube 클론코딩의 기록**
 
@@ -84,6 +86,7 @@ Today I Learned: 성장을 기록하는 공간
 
 ## (3) Routers
 
+- [URL](./posts/youtubeClone/url.md)
 - [What are Routers]()
 
 <br>
